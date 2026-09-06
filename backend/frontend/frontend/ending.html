@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Schedule Completed</title>
+
+    <style>
+
+        body {
+
+            margin: 0;
+
+            padding: 0;
+
+            font-family: Arial, sans-serif;
+
+            height: 100vh;
+
+            display: flex;
+
+            justify-content: center;
+
+            align-items: center;
+
+            background: linear-gradient(135deg, #00c853, #0091ea);
+
+            overflow: hidden;
+
+            color: white;
+        }
+
+        .container {
+
+            width: 80%;
+
+            max-width: 650px;
+
+            text-align: center;
+
+            background: rgba(255,255,255,0.1);
+
+            padding: 40px;
+
+            border-radius: 25px;
+
+            backdrop-filter: blur(10px);
+
+            animation: popup 1s ease;
+        }
+
+        h1 {
+
+            font-size: 50px;
+
+            margin-bottom: 15px;
+
+            animation: glow 2s infinite alternate;
+        }
+
+        p {
+
+            font-size: 20px;
+
+            line-height: 1.8;
+        }
+
+        .emoji {
+
+            font-size: 70px;
+
+            margin-bottom: 20px;
+
+            animation: bounce 1.5s infinite;
+        }
+
+        button {
+
+            margin-top: 25px;
+
+            padding: 14px 28px;
+
+            border: none;
+
+            border-radius: 12px;
+
+            background: white;
+
+            color: black;
+
+            font-size: 17px;
+
+            font-weight: bold;
+
+            cursor: pointer;
+
+            transition: 0.3s;
+        }
+
+        button:hover {
+
+            transform: scale(1.08);
+        }
+
+        @keyframes popup {
+
+            from {
+
+                transform: scale(0.5);
+
+                opacity: 0;
+            }
+
+            to {
+
+                transform: scale(1);
+
+                opacity: 1;
+            }
+        }
+
+        @keyframes bounce {
+
+            0% {
+
+                transform: translateY(0);
+            }
+
+            50% {
+
+                transform: translateY(-15px);
+            }
+
+            100% {
+
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes glow {
+
+            from {
+
+                text-shadow: 0 0 10px white;
+            }
+
+            to {
+
+                text-shadow: 0 0 25px yellow;
+            }
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="emoji">
+        🏆
+    </div>
+
+    <h1>Schedule Completed!</h1>
+
+    <p>
+        🎯 Best activity path generated successfully.
+    </p>
+
+    <p>
+        ⚡ Maximum non-overlapping activities selected using Greedy Algorithm.
+    </p>
+
+    <p>
+        🚀 Your daily schedule is now perfectly optimized!
+    </p>
+
+    <button onclick="playAgain()">
+        🔄 Play Again
+    </button>
+
+</div>
+
+<script>
+
+function playAgain() {
+
+    window.location.href = "index.html";
+}
+
+</script>
+
+</body>
+
+</html>

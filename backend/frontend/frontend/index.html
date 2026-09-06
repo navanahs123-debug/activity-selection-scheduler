@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activity Scheduler Game</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>🎮 Activity Scheduler Game</h1>
+
+    <p>Select activities and generate the best schedule!</p>
+
+    <button onclick="generateRound()">🎲 Generate Activities</button>
+
+    <h3>📋 Available Activities</h3>
+    <div id="cards"></div>
+
+    <button onclick="solveSchedule()">🏆 Generate Best Schedule</button>
+
+    <h3>✅ Best Activity Schedule</h3>
+    <div id="output"></div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
+<div class="section">
+
+    <button onclick="generateRound()">
+        🎲 Generate Activities
+    </button>
+
+    <button onclick="goDashboard()">
+        🏠 Dashboard
+    </button>
+
+</div>
+<!-- ADD ACTIVITY -->
+<div class="section">
+
+    <h3>➕ Add Activity</h3>
+
+    <input type="text" id="name" placeholder="Activity Name">
+
+    <input type="number" id="start" placeholder="Start Time">
+
+    <input type="number" id="end" placeholder="End Time">
+
+    <button onclick="addActivity()">
+        Add Activity
+    </button>
+
+</div>
+
+<!-- BUTTONS -->
+<div class="section">
+
+    <button onclick="generateRound()">
+        🎲 Generate Activities
+    </button>
+
+    <button onclick="goDashboard()">
+        🏠 Dashboard
+    </button>
+
+</div>
